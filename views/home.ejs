@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego Collection</title>
+    <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+ 
+  <%- include('partials/navbar', {page:'/home'})%>
+  <div class="container mx-auto">
+
+    <div class="hero  min-h-screen " style="background-image: url(https://images.unsplash.com/photo-1516981879613-9f5da904015f?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+      <div class="hero-overlay bg-opacity-90"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-md">
+          <h1 class="mb-5 text-5xl font-bold">Welcome!</h1>
+          <p class="mb-5">Embark on endless adventures with LEGO collection, where imagination meets creativity! Build towering castles, futuristic cities, or explore distant galaxies.</p>
+          <a class="btn btn-primary" href="/lego/sets">Get Started Now</a>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- grid and card -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img id ="third" class="w-full" src="https://cdn.rebrickable.com/media/thumbs/sets/01-1/119026.jpg/1000x800p.jpg?1696905411.2854311" alt="chain links image" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Chain Links</h2>
+            <p>The LEGO Chain Reactions set is a creative way for kids to learn engineering and physics through building interactive machines.</p>
+            <div class="card-actions justify-end">
+              <a href="/lego/sets/01-1" class="btn btn-primary">View</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div>
+
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img id = "first" class="w-full" src="https://cdn.rebrickable.com/media/thumbs/sets/011-1/86887.jpg/1000x800p.jpg?1651490866.8524091" alt="Basic Building Set image" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Basic Building Set</h2>
+            <p>The Basic Building Set released in 1968 provides a versatile platform for limitless creativity, offering a wide range of LEGO bricks to inspire imaginative construction projects.</p>
+            <div class="card-actions justify-end">
+              <a href="/lego/sets/011-1" class="btn btn-primary">View</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div>
+
+        <div class="card bg-base-100 shadow-xl">
+          <figure>
+            <img id ="second" class="w-full" src="https://cdn.rebrickable.com/media/thumbs/sets/021-1/4000.jpg/1000x800p.jpg?1657464064.7959127" alt="wheel set image" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">Wheel Set</h2>
+            <p>The Wheel Set offers a variety of LEGO wheels and axles, enabling builders to create vehicles, machines, and more with ease and ingenuity.</p>
+            <div class="card-actions justify-end">
+              <a href="/lego/sets/021-1" class="btn btn-primary">View</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    
+  </div>
+</body>
+
+</html>
