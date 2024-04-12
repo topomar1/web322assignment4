@@ -31,17 +31,20 @@
                 <div>
                     <p><strong>Set Name</strong>: <%= legoSet.name %></p>    
                     <p><strong>Year Released</strong>: <%= legoSet.year %></p>    
-                    <p><strong>Theme</strong>: <%= legoSet.theme %></p>    
+                    <p><strong>Theme</strong>: <%= legoSet.Theme.name %></p>    
                     <p><strong>Number of Parts</strong>: <%= legoSet.num_parts %></p> 
                 </div> 
                 
                 <p id="quote"> </p>
                 <p id="author" style=" font-style: italic"> </p>
                 
+                <a href="/lego/editSet/<%= legoSet.set_num %>" class="btn btn-success">Edit Set: <%= legoSet.name %></a>
                 <a href="#" onclick="history.back(); return false;" class="btn btn-primary">Back</a>
             </div>
       
           </div>
+
+          
 
     </div>
 </body>
